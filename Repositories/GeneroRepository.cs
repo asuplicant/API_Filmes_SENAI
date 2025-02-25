@@ -1,52 +1,72 @@
-﻿using API_Filmes_SENAI.Context;
+﻿
+using API_Filmes_SENAI.Context;
 using API_Filmes_SENAI.Domains;
 using API_Filmes_SENAI.Interfaces;
-using API_Filmes_SENAI.Migrations;
-using Microsoft.AspNetCore.Mvc;
 
 namespace API_Filmes_SENAI.Repositories
 {
+
+    // classe que vai implementar a interface IGeneroRepository
+    // ou seja, vamos implementar os metodos, toda a logica dos metodos
     public class GeneroRepository : IGeneroRepository
     {
+
+        // variavel privada somente a leitura que "guarda" os dados do contexto
         private readonly Filmes_Context _context;
 
-        /// <summary>
-        /// Construtor do Repositório
-        /// Aqui, toda vez que o construtor for chamado, os dados do contexto estão disponíveis.
-        /// </summary>
-        /// <param name="contexto">Dados do contexto</param>
 
+        // construtor do repositorio
 
         public GeneroRepository(Filmes_Context contexto)
         {
-            _context = contexto;
-        }
 
+            _context = contexto;
+
+        }
 
         public void Atualizar(Guid id, Genero genero)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Genero generoBuscado = _context.Genero.Find(id)!;
+                if (generoBuscado != null)
+                {
+                    generoBuscado.Nome = genero.Nome;
+                }
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public Genero BuscarPorID(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Genero generoBuscado = _context.Genero.Find(id)!;
+
+                return generoBuscado;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
-        /// <summary>
-        /// Método para Cadastrar o Genero
-        /// </summary>
-        /// <param name="novoGenero">Objeto genero a ser Cadastrado</param>
-
-
+        // metodo para cadastrar um novo genero
         public void Cadastrar(Genero novoGenero)
         {
             try
             {
-                // Adiciona um novo Genero na tabela Generos(BD)
+                // adiciona um novo genero na tabela Genero(BD)
                 _context.Genero.Add(novoGenero);
 
-                // Após o cadastro, salva as alterações(BD)
+                // após o cadastro, salva as alterações(BD)
                 _context.SaveChanges();
             }
             catch (Exception)
@@ -58,24 +78,40 @@ namespace API_Filmes_SENAI.Repositories
 
         public void Delete(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Genero generoBuscado = _context.Genero.Find(id)!;
+
+                if (generoBuscado != null)
+                {
+                    _context.Genero.Remove(generoBuscado);
+                }
+
+                _context.SaveChanges();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public List<Genero> Listar()
         {
             try
             {
-                List<Genero> listaGeneros = _context.Genero.ToList();
 
-                return listaGeneros;
             }
             catch (Exception)
             {
+
                 throw;
             }
 
-                }
+            List<Genero> ListaGeneros = _context.Genero.ToList();
 
-            }
+            return ListaGeneros;
         }
-   
+    }
+}

@@ -1,7 +1,7 @@
+using API_Filmes_SENAI.Repositories;
 using API_Filmes_SENAI.Context;
 using API_Filmes_SENAI.Domains;
 using API_Filmes_SENAI.Interfaces;
-using API_Filmes_SENAI.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +12,7 @@ builder.Services.AddDbContext<Filmes_Context>(options =>
 
 // Adicionar o repositório e a interface ao continuar a injeção de dependência 
 builder.Services.AddScoped<IGeneroRepository,GeneroRepository>();
+builder.Services.AddScoped<IFilmeRepository, FilmeRepository>();
 
 // Adicionar o serviço de Controllers
 builder.Services.AddControllers();

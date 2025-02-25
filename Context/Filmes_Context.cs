@@ -1,5 +1,4 @@
-﻿using System.Net;
-using API_Filmes_SENAI.Domains;
+﻿using API_Filmes_SENAI.Domains;
 using Microsoft.EntityFrameworkCore;
 
 namespace API_Filmes_SENAI.Context
@@ -7,13 +6,11 @@ namespace API_Filmes_SENAI.Context
     public class Filmes_Context : DbContext
     {
         public Filmes_Context() 
-        { 
-
+        {
         }
 
         public Filmes_Context(DbContextOptions<Filmes_Context> options) : base(options)
         {
-
         }
 
         /// <summary>
