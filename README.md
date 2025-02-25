@@ -1,19 +1,13 @@
-# API Filmes Senai
+# API Filmes Senai ૮ ˶ᵔ ᵕ ᵔ˶ ა
 
-API desenvolvida pelo Visual Studio 2022!
+API desenvolvida para o manuseio de Filmes & seus Gêneros.
 
-# Começando! ૮ ˶ᵔ ᵕ ᵔ˶ ა
+### ⌨ Pré-requisitos
+A API foi criada com o auxílio dos aplicativos Visual Studio 2022 & SQL Management Studio 2019.  
+— Segue abaixo os meios de instalação:
 
-A API foi criada com o auxílio dos aplicativos Visual Studio 2022 & SQL Management Studio 2019.
-Segue abaixo os meios de instalação:
-
-Consulte **[Visual Studio 2022 Download](https://visualstudio.microsoft.com/downloads/)** para obter o aplicativo.
+Consulte **[Visual Studio 2022 Download](https://visualstudio.microsoft.com/downloads/)** para obter o aplicativo.  
 Consulte **[SQL Manegament Studio 2019](https://learn.microsoft.com/en-us/ssms/download-sql-server-management-studio-ssms)** para obter o aplicativo.
-
-### ꪆৎ Pré-requisitos ꪆৎ 
-
-Você terá que instalar o aplicativo Visual Studio 2022 juntamente do SQL Server Management Studio 2020 em sua máquina para o prosseguimento.
-Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 
 ### 🔧 Instalação
 
