@@ -7,30 +7,29 @@ A API foi criada com o auxílio dos aplicativos Visual Studio 2022, SQL Server &
 — Segue abaixo os meios de instalação:
 
 Consulte **[Visual Studio 2022 Download](https://visualstudio.microsoft.com/downloads/)** para obter o aplicativo.  
-Consulte **[SQL Manegament Studio 2019 Download](https://learn.microsoft.com/en-us/ssms/download-sql-server-management-studio-ssms)** para obter o aplicativo.
+Consulte **[SQL Manegament Studio 2019 Download](https://learn.microsoft.com/en-us/ssms/download-sql-server-management-studio-ssms)** para obter o aplicativo.  
 Consulte **[SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)** para obter o aplicativo.
 
-### 🔧 Instalação
+### 🔧 Criação de Projeto
 
-Ainda n
+1. Criar um Novo Projeto no Visual Studio 2022.  
+2. Abrir o Visual Studio 2022.  
+3. Criar um novo projeto → Escolha "ASP.NET Core Web API".  
+4. Dê um nome ao projeto → 𖹭 Exemplo: API_Filmes_SENAI.  
+5. Escolha o .NET 6 ou superior e desative a autenticação (para este exemplo).  
+6. Clique em "Criar" e aguarde o carregamento.
 
-Diga como essa etapa será:
+## ⚙️ Banco de Dados no SQL Server
 
-```
-Dar exemplos
-```
+1. Abrir o SQL Server Management Studio (SSMS) e conectar ao servidor.  
+2. Criar um novo banco de dados:      
 
-E repita:
+____________________________________________________________
+sql
 
-```
-Até finalizar
-```
+CREATE DATABASE FilmesDB;  
+____________________________________________________________
 
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
-
-## ⚙️ Executando os testes
-
-Explicar como executar os testes automatizados para este sistema.
 
 ### 🔩 Analise os testes de ponta a ponta
 
