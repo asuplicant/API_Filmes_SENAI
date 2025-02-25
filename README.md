@@ -4,7 +4,7 @@ API desenvolvida pelo Visual Studio 2022!
 
 # Começando! ૮ ˶ᵔ ᵕ ᵔ˶ ა
 
-A API foi criada com o auxílio dos aplicativos Visual Studio 2022 & SQL Manegament Studio 2019.
+A API foi criada com o auxílio dos aplicativos Visual Studio 2022 & SQL Management Studio 2019.
 Segue abaixo os meios de instalação:
 
 Consulte **[Visual Studio 2022 Download](https://visualstudio.microsoft.com/downloads/)** para obter o aplicativo.
