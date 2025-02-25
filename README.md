@@ -4,9 +4,11 @@ API desenvolvida pelo Visual Studio 2022!
 
 # Começando! ૮ ˶ᵔ ᵕ ᵔ˶ ა
 
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+A API foi criada com o auxílio dos aplicativos Visual Studio 2022 & SQL Manegament Studio 2019.
+Segue abaixo os meios de instalação:
 
-Consulte **[Implantação][(#-implanta%C3%A7%C3%A3o)](https://visualstudio.microsoft.com/downloads/)** para saber como implantar o projeto.
+Consulte **[Visual Studio 2022 Download](https://visualstudio.microsoft.com/downloads/)** para obter o aplicativo.
+Consulte **[SQL Manegament Studio 2019](https://learn.microsoft.com/en-us/ssms/download-sql-server-management-studio-ssms)** para obter o aplicativo.
 
 ### ꪆৎ Pré-requisitos ꪆৎ 
 
